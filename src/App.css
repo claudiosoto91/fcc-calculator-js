@@ -1,0 +1,84 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body{
+  background: #5656f5;
+}
+
+.container{
+  padding-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.grid{
+  font-size: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "exp exp exp exp"
+    "io io io io"
+    "clearAll clear divide multiply"
+    "seven eight nine subtract"
+    "four five six add"
+    "one two three equals"
+    "zero zero decimal equals"
+}
+.padButton button{
+  width: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 4rem;
+  background-color: gray;
+  color: white;
+  border: 1px solid black;
+  cursor: pointer;
+  font-size: 2rem;
+}
+.padButton button:hover{
+  border: 1px solid white;
+  color: #ccc;
+}
+.dark-gray{
+  background-color: #333;
+}
+.tomato{
+  background-color: tomato;
+}
+.blue{
+  background-color: #5599ff;
+}
+
+.zero{
+  grid-area: zero;
+}
+.zero button{
+  width: 100%;
+}
+.equals{
+  grid-area: equals;
+}
+.equals button{
+  height: 100%;
+}
+.exp{
+  padding: 1rem;
+  grid-area: exp;
+  height: 4rem;
+  background: black;
+  color: yellow;
+  text-align: right;
+}
+.io{
+  padding: 1rem;
+  grid-area: io;
+  height: 4rem;
+  background: black;
+  color: yellow;
+  text-align: right;
+}
